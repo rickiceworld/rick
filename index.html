@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Scroller</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: sans-serif;
+    }
+
+    .scroller-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      padding: 10px;
+    }
+
+    .scroller-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroller-container::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 4px;
+    }
+
+    .photo {
+      display: inline-block;
+      width: auto;
+      height: 90vh;
+      margin-right: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .photo {
+        height: 80vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroller-container">
+    <img src="img1.png" alt="Photo 1" class="photo" />
+    <img src="img2.png" alt="Photo 2" class="photo" />
+    <img src="img3.png" alt="Photo 3" class="photo" />
+    <img src="img4.png" alt="Photo 4" class="photo" />
+    <img src="img5.png" alt="Photo 5" class="photo" />
+    <img src="img6.png" alt="Photo 6" class="photo" />
+    <img src="img7.png" alt="Photo 7" class="photo" />
+    <img src="img8.png" alt="Photo 8" class="photo" />
+    <img src="img9.png" alt="Photo 9" class="photo" />
+  </div>
+</body>
+</html>
